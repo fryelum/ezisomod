@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>ezisomod</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../ezisomod.qrc">
+    <normaloff>:/img/pwf2tools.png</normaloff>:/img/pwf2tools.png</iconset>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="ModeTabs">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="InjectFileTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Inject a File</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="11" column="0" colspan="4">
+         <widget class="QLineEdit" name="InjectSourceFileLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="4">
+         <widget class="QPushButton" name="InjectSourceFileBrowseButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="InjectSourceISOBrowseButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="4">
+         <widget class="QLineEdit" name="InjectSourceISOLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="2">
+         <widget class="QPushButton" name="InjectInjectButton">
+          <property name="text">
+           <string>Inject!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0" colspan="2">
+         <spacer name="InjectHoriSpacer1">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="16" column="3" colspan="2">
+         <spacer name="InjectHoriSpacer2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="12" column="0" colspan="5">
+         <spacer name="InjectVertSpacer3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="9" column="0" colspan="5">
+         <spacer name="InjectVertSpacer2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0" colspan="5">
+         <spacer name="InjectVertSpacer1">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0" colspan="5">
+         <widget class="QLabel" name="InjectEnterPathLabel">
+          <property name="text">
+           <string>Enter the path to a file that you want to inject to (e.g. DATA/LOGO.INT):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="5">
+         <widget class="QLabel" name="InjectSelectSourceFileLabel">
+          <property name="text">
+           <string>Select your source file to be injected into your ISO (e.g. NEWLOGO.INT):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="5">
+         <widget class="QLabel" name="InjectSelectSourceISOLabel">
+          <property name="text">
+           <string>Select your source ISO file:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="5">
+         <widget class="QLineEdit" name="InjectTargetPathLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ExtractFileTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Extract a File</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="9" column="0" colspan="4">
+         <widget class="QLineEdit" name="ExtractOutputFileLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="2">
+         <spacer name="ExtractHoriSpacer1">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>225</width>
+            <height>31</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QLabel" name="ExtractSelectSourceISOLabel">
+          <property name="text">
+           <string>Select your source ISO file:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="2">
+         <widget class="QPushButton" name="ExtractExtractButton">
+          <property name="text">
+           <string>Extract!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="ExtractSourceISOBrowseButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="4">
+         <widget class="QPushButton" name="ExtractOutputFileBrowseButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Browse</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="4">
+         <widget class="QLineEdit" name="ExtractSourceISOLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="5">
+         <spacer name="ExtractVertSpacer1">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0" colspan="5">
+         <widget class="QLabel" name="ExtractEnterPathLabel">
+          <property name="text">
+           <string>Enter the path to a file that you want to extract from (e.g. DATA/LOGO.INT):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="5">
+         <widget class="QLineEdit" name="ExtractTargetPathLineEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="5">
+         <widget class="QLabel" name="ExtractSelectOutputFileLabel">
+          <property name="text">
+           <string>Select your output file to be extracted from your ISO (e.g. NEWLOGO.INT):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="5">
+         <spacer name="ExtractVertSpacer2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="10" column="0" colspan="5">
+         <spacer name="ExtractVertSpacer3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>548</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="13" column="3" colspan="2">
+         <spacer name="ExtractHoriSpacer2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>124</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="Menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>571</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="MenubarFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="MenubarActionQuit"/>
+   </widget>
+   <widget class="QMenu" name="MenubarHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="MenubarActionOpenLogWindow"/>
+    <addaction name="separator"/>
+    <addaction name="MenubarActionAbout"/>
+   </widget>
+   <addaction name="MenubarFile"/>
+   <addaction name="MenubarHelp"/>
+  </widget>
+  <action name="MenubarActionOpenLogWindow">
+   <property name="text">
+    <string>Open Log Window</string>
+   </property>
+  </action>
+  <action name="MenubarActionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="MenubarActionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../ezisomod.qrc"/>
+ </resources>
+ <connections/>
+</ui>
